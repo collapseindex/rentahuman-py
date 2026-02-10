@@ -277,6 +277,12 @@ pytest
 - [x] AutoGen integration (9 FunctionTools)
 - [x] Semantic Kernel integration (9 kernel functions)
 - [x] Async client (`httpx`)
+- [ ] **SDK-side efficiency layer** — reduce agent round trips without API changes:
+  - [ ] Client-side TTL cache (skills list, human profiles — avoid redundant GETs)
+  - [ ] `search_and_enrich()` — auto-fetch reviews for top N search results in parallel
+  - [ ] `find_and_book()` — search → rank → book → message as a single SDK call
+  - [ ] Async batch helper — `asyncio.gather()` wrapper for parallel profile+review fetches
+  - [ ] Response caching with ETag/If-None-Match (if API supports conditional requests)
 - [ ] n8n community node (TypeScript — separate repo)
 - [ ] Dify plugin (separate repo)
 
