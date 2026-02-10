@@ -283,6 +283,17 @@ pytest
   - [ ] `find_and_book()` — search → rank → book → message as a single SDK call
   - [ ] Async batch helper — `asyncio.gather()` wrapper for parallel profile+review fetches
   - [ ] Response caching with ETag/If-None-Match (if API supports conditional requests)
+- [ ] **Platform gap analysis** — API improvements to propose upstream (requires API changes):
+  - [ ] Proof-of-completion endpoint (photo/file upload, GPS check-in, timestamped evidence per booking)
+  - [ ] `submit_review` endpoint — agents can't rate humans after tasks (reviews are read-only today)
+  - [ ] Dispute flow — no `disputed`/`refunded` booking status, no agent recourse if work is bad
+  - [ ] Escrow release API — Stripe Connect escrow exists but zero API surface to hold/release/refund
+  - [ ] Webhooks for status changes — agents currently must poll; need push notifications for `confirmed`/`completed`/etc.
+  - [ ] Structured availability/scheduling — time-slot or iCal endpoint instead of freeform "availability" field
+  - [ ] Location geocoding — lat/lng + radius search instead of freeform `location` string
+  - [ ] Task templates — pre-built schemas for common tasks (photo verification, package pickup, meeting attendance)
+  - [ ] Deadline/SLA enforcement — `deadline` field on bookings with auto-cancel if human doesn't start
+  - [ ] Batch operations — bulk bounty creation for scaled tasks
 - [ ] n8n community node (TypeScript — separate repo)
 - [ ] Dify plugin (separate repo)
 
