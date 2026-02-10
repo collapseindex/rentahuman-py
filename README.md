@@ -312,6 +312,21 @@ pytest
 - [ ] n8n community node (TypeScript — separate repo)
 - [ ] Dify plugin (separate repo)
 
+## TL;DR — What This Unlocks
+
+| What | Before | After |
+|------|--------|-------|
+| **Agent integration** | Read the docs, write HTTP calls manually | `pip install rentahuman` → 3 lines of code |
+| **Framework support** | None | LangChain, CrewAI, AutoGen, Semantic Kernel, async |
+| **Agent round trips** | 5-8 API calls per workflow | 1 SDK call (`find_and_book()`) |
+| **Developer testing** | Static Alice & Bob | Rich mock server with state machine + error simulation |
+| **Distribution reach** | MCP only | + GPT Actions, Zapier, Postman, any OpenAPI client |
+| **Task safety** | No screening | Guardrail middleware before bounty submission |
+| **Real-time updates** | Poll forever | Webhook simulator with local callbacks |
+| **Time to first booking** | Hours of integration work | Minutes |
+
+**8 things shipped. 30+ proposed. Zero API changes needed for the first wave.**
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
