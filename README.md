@@ -4,7 +4,7 @@
 
 > *350,000 humans. 11,000 bounties. The demand side needs more pipes.*
 
-One package. Every agent framework. `pip install` your way onto the meatspace layer.
+One package. Every agent framework. Install from GitHub and onto the meatspace layer.
 
 ---
 
@@ -22,13 +22,15 @@ One package. Every agent framework. `pip install` your way onto the meatspace la
 - **Async client** — httpx-based async drop-in for the sync client
 
 ```bash
-pip install rentahuman              # core SDK
-pip install rentahuman[langchain]   # + LangChain tools
-pip install rentahuman[crewai]      # + CrewAI tools
-pip install rentahuman[autogen]     # + AutoGen tools
-pip install rentahuman[semantic-kernel] # + Semantic Kernel plugin
-pip install rentahuman[async]       # + async httpx client
-pip install rentahuman[all]         # everything
+# Install from GitHub (not yet on PyPI)
+pip install git+https://github.com/collapseindex/rentahuman-py.git               # core SDK
+pip install "rentahuman[langchain] @ git+https://github.com/collapseindex/rentahuman-py.git"   # + LangChain tools
+pip install "rentahuman[all] @ git+https://github.com/collapseindex/rentahuman-py.git"         # everything
+
+# Or clone and install locally
+git clone https://github.com/collapseindex/rentahuman-py.git
+cd rentahuman-py
+pip install -e ".[all]"             # editable install with all extras
 ```
 
 ## Quick Start
