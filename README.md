@@ -283,6 +283,12 @@ pytest
   - [ ] `find_and_book()` — search → rank → book → message as a single SDK call
   - [ ] Async batch helper — `asyncio.gather()` wrapper for parallel profile+review fetches
   - [ ] Response caching with ETag/If-None-Match (if API supports conditional requests)
+- [ ] **Buildable now** — tools we can ship without API access:
+  - [ ] OpenAPI 3.1 spec — reverse-engineered from docs; unlocks GPT Actions, Zapier, Postman, auto-gen clients
+  - [ ] CLI tool (`typer`) — `rentahuman search --skill Photography --max-rate 50` for quick testing/demos
+  - [ ] Task safety guardrails — middleware that screens bounty descriptions before posting (keyword blocklist + pluggable LLM filter)
+  - [ ] Rich mock server — `FakeRentAHumanServer` with randomized profiles, booking state machine, simulated delays/errors/rate limits
+  - [ ] Webhook simulator — polling-to-callback adapter that watches booking status and fires local callbacks (SDK-side workaround)
 - [ ] **Platform gap analysis** — API improvements to propose upstream (requires API changes):
   - [ ] Proof-of-completion endpoint (photo/file upload, GPS check-in, timestamped evidence per booking)
   - [ ] `submit_review` endpoint — agents can't rate humans after tasks (reviews are read-only today)
