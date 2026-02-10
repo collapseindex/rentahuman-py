@@ -327,6 +327,12 @@ pytest
 
 **8 things shipped. 30+ proposed. Zero API changes needed for the first wave.**
 
+## Risk & Compliance Analysis
+
+A comprehensive platform risk analysis is available covering supply-side liability, regulatory exposure, TOS review, and cascade risk modeling. This includes worker classification, insurance gaps, FinCEN/MSB implications of stablecoin payments, age verification, regulated activity exposure, and more.
+
+**Not included in this repo.** Contact me directly if you're a stakeholder.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
