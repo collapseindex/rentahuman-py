@@ -294,6 +294,15 @@ pytest
   - [ ] Task templates — pre-built schemas for common tasks (photo verification, package pickup, meeting attendance)
   - [ ] Deadline/SLA enforcement — `deadline` field on bookings with auto-cancel if human doesn't start
   - [ ] Batch operations — bulk bounty creation for scaled tasks
+- [ ] **Business & distribution observations** — growth levers for the platform:
+  - [ ] JS/TS SDK — MCP is npm but no standalone `rentahuman` package for Vercel AI SDK, OpenAI Assistants, etc.
+  - [ ] OpenAI GPT Actions spec — hosted OpenAPI schema so custom GPTs can call rentahuman natively
+  - [ ] Zapier/Make connector — no-code agents are a massive distribution channel, currently locked out
+  - [ ] Marketplace health dashboard — active human count, geographic coverage, avg response time (agents need confidence signals)
+  - [ ] Enterprise tier — team accounts, shared billing, audit logs, SSO for compliance-heavy orgs
+  - [ ] Agent reputation system — humans get rated but agents don't; humans need signal on who's trustworthy
+  - [ ] Staging sandbox with realistic data — mock mode is static Alice & Bob; devs need a real test environment
+  - [ ] Supply-side growth mechanics — referral program, "bring your crew" incentives, activation/retention tracking
 - [ ] n8n community node (TypeScript — separate repo)
 - [ ] Dify plugin (separate repo)
 
